@@ -26,7 +26,10 @@ export default function SocialMedia() {
         </motion.button>
 
         <div className="flex  gap-6 text-4xl lg:text-6xl text-purple-400 z-20">
-          <motion.a whileHover={{ scale: 1.2 }} href="#">
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            href="https://github.com/JonathanTube"
+          >
             <SiGithub />
           </motion.a>
           <motion.a

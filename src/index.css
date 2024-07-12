@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #220932;
+}
+
+h2 {
+  @apply text-xl lg:text-4xl;
+}
+
+p {
+  @apply text-xl tracking-tight leading-relaxed;
+}
+
+span {
+  @apply text-white;
+}
+
+.shiny-effect {
+  @apply absolute rounded-full z-10 pointer-events-none;
+  background: radial-gradient(circle, rgba(178, 19, 202, 0.2), transparent);
+}

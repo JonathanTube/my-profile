@@ -1,4 +1,4 @@
-import { FaStar } from "react-icons/fa"
+import { FaRegStar, FaStar } from "react-icons/fa"
 import { RiJavaLine } from "react-icons/ri"
 import { motion } from "framer-motion"
 import {
@@ -148,21 +148,27 @@ function Skills() {
             <h3 className="text-xl font-bold mb-4 text-center">
               {skill.category}
             </h3>
-            <div className="grid grid-cols-2 gap-x-10 gap-y-4">
+            <div className="grid grid-cols-2 gap-y-5 gap-x-10">
               {skill.items.map((item, idx) => (
-                <div key={idx} className="flex justify-between gap-10">
+                <div
+                  key={idx}
+                  className="flex justify-between items-center gap-5"
+                >
                   <div className="flex items-center space-x-2">
                     <span>{item.icon}</span>
                     <span>{item.name}</span>
                   </div>
                   <div className="flex gap-1">
-                    {item.stars && (
-                      <>
-                        {[...Array(item.stars)].map((_, idx) => (
-                          <FaStar key={idx} className="text-yellow-400" />
-                        ))}
-                      </>
-                    )}
+                    <>
+                      {[...Array(item.stars)].map((_, idx) => (
+                        <FaStar key={idx} className="text-yellow-400" />
+                      ))}
+                    </>
+                    <>
+                      {[...Array(5 - item.stars)].map((_, idx) => (
+                        <FaRegStar key={idx} className="text-gray-500" />
+                      ))}
+                    </>
                   </div>
                 </div>
               ))}

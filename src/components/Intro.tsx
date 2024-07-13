@@ -44,7 +44,7 @@ export default function Intro() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 1 }}
-        className="text-gray-300 max-w-[300px] lg:max-w-[600px] text-lg lg:text-2xl mb-6"
+        className="text-gray-300 max-w-[500px] lg:max-w-[600px] text-lg lg:text-2xl mb-6"
       >
         I'm a passionate fullstack web developer with over 10 years of
         experience.

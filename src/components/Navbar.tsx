@@ -34,7 +34,10 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50">
       <div className="max-w-screen-2xl mx-auto flex justify-between text-gray-100 text-xl items-center px-6 h-20">
-        <a>Jonathan.K</a>
+        <div className="flex items-center">
+          <img alt="logo" src="/code.svg" className="w-6" />
+          <span className="ml-2">Jonathan.K</span>
+        </div>
 
         <ul className="hidden lg:flex gap-12 z-10 cursor-pointer">
           <li>
@@ -66,7 +69,7 @@ export default function Navbar() {
           initial={false}
           animate={nav ? "open" : "closed"}
           variants={menuVariants}
-          className="fixed left-0 top-0 w-full min-h-screen bg-gray-900 z-40"
+          className="fixed left-0 top-0 w-full min-h-screen bg-gray-900 z-40 cursor-pointer"
         >
           <ul className="font-semibold text-4xl space-y-8 mt-24 text-center">
             <li>

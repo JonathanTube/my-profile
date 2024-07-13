@@ -1,8 +1,8 @@
 type params = {
   left?: number
   right?: number
+  size?: number
   top: number
-  size: number
 }
 
 export const ShinyEffect = ({ left, right, top, size = 500 }: params) => {

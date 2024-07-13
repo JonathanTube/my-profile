@@ -10,7 +10,7 @@ export default function SocialMedia() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 1.5 }}
-        className="flex flex-col md:flex-row items-center gap-6 my-4 lg:mb-0"
+        className="flex flex-col lg:flex-row items-center gap-6 my-4 lg:mb-0"
       >
         <motion.button
           whileHover={{

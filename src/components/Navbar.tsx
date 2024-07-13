@@ -32,26 +32,28 @@ export default function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50">
+    <div className="sticky top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50">
       <div className="max-w-screen-2xl mx-auto flex justify-between text-gray-100 text-xl items-center px-6 h-20">
-        <div className="flex items-center">
-          <img alt="logo" src="/code.svg" className="w-6" />
-          <span className="ml-2">Jonathan.K</span>
+        <div className="flex items-center cursor-pointer">
+          <img alt="logo" src="/code.svg" className="w-6 mr-4" />
+          <Link to="about" smooth={true} offset={-150} duration={500}>
+            Jonathan.K
+          </Link>
         </div>
 
         <ul className="hidden lg:flex gap-12 z-10 cursor-pointer">
           <li>
-            <Link to="/skills" smooth={true} offset={50} duration={500}>
+            <Link to="skills" smooth={true} offset={50} duration={500}>
               Skills
             </Link>
           </li>
           <li>
-            <Link to="/portfolio" smooth={true} offset={50} duration={500}>
+            <Link to="portfolio" smooth={true} offset={50} duration={500}>
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to="/contract" smooth={true} offset={50} duration={500}>
+            <Link to="contract" smooth={true} offset={50} duration={500}>
               Contract
             </Link>
           </li>
@@ -74,7 +76,7 @@ export default function Navbar() {
           <ul className="font-semibold text-4xl space-y-8 mt-24 text-center">
             <li>
               <Link
-                to="/skills"
+                to="about"
                 onClick={closeNav}
                 smooth={true}
                 offset={50}
@@ -85,7 +87,18 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                to="/portfolio"
+                to="skills"
+                onClick={closeNav}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="portfolio"
                 onClick={closeNav}
                 smooth={true}
                 offset={50}
@@ -96,7 +109,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                to="/contract"
+                to="contract"
                 onClick={closeNav}
                 smooth={true}
                 offset={50}

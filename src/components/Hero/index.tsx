@@ -7,7 +7,10 @@ import { ShinyEffect } from "./ShinyEffect"
 
 function Hero() {
   return (
-    <div className="mt-24 max-w-screen-xl mx-auto relative">
+    <div
+      className="mt-5 lg:mt-10 max-w-screen-xl mx-auto relative lg:border-b border-separate border-jonathan-light/10"
+      id="about"
+    >
       <div className="grid mx-5 lg:grid-cols-2 lg:mx-5 place-items-center gap-5">
         <motion.div
           initial={{ opacity: 0, y: -50 }}

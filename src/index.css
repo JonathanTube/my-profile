@@ -6,7 +6,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #220932;
+  background-color: #212121;
 }
 
 h2 {
@@ -25,8 +25,8 @@ span {
   @apply absolute rounded-full z-10 pointer-events-none;
   background-image: radial-gradient(
     circle,
-    rgba(178, 19, 202, 0.2) 30%,
+    rgba(13, 115, 119, 0.2) 30%,
     transparent,
-    rgb(34, 9, 50)
+    rgb(33, 33, 33)
   );
 }

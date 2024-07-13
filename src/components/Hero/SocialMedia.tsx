@@ -9,7 +9,7 @@ export default function SocialMedia() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 1.5 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
         className="flex flex-col lg:flex-row items-center gap-6 my-4 lg:mb-0"
       >
         <motion.button
@@ -17,7 +17,7 @@ export default function SocialMedia() {
             scale: 1.05,
             boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
           }}
-          className="cursor-pointer z-10 rounded-lg font-bold text-gray-200 lg:w-auto p-4 border border-purple-200"
+          className="cursor-pointer z-10 rounded-lg font-bold text-gray-200 lg:w-auto p-4 border border-cyan-200"
         >
           <div className="flex items-center gap-2">
             <GrDocumentPdf />
@@ -25,7 +25,7 @@ export default function SocialMedia() {
           </div>
         </motion.button>
 
-        <div className="flex  gap-6 text-4xl lg:text-6xl text-purple-400 z-20">
+        <div className="flex gap-6 text-4xl lg:text-6xl text-jonathan-light z-20">
           <motion.a
             whileHover={{ scale: 1.2 }}
             href="https://github.com/JonathanTube"

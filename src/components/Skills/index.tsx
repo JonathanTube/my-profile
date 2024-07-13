@@ -1,4 +1,3 @@
-import { FaRegStar, FaStar, FaStarHalf } from "react-icons/fa"
 import { RiJavaLine } from "react-icons/ri"
 import { motion } from "framer-motion"
 import {
@@ -21,6 +20,7 @@ import {
   SiTailwindcss,
   SiVuedotjs,
 } from "react-icons/si"
+import Category from "./Category"
 
 const skills = [
   {
@@ -194,54 +194,9 @@ function Skills() {
           there
         </a>
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-4 lg:gap-5 mt-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-4 lg:gap-6 mt-5 w-full max-w-screen-xl">
         {skills.map((skill, index) => (
-          <div
-            key={index}
-            className={`border border-jonathan-main/60 p-6 bg-jonathan-main/20 shadow-md w-full rounded-md ${
-              index === 0 && "lg:col-span-2"
-            }`}
-          >
-            <h3 className="text-xl font-bold mb-4 text-center">
-              {skill.category}
-            </h3>
-            <div
-              className={`grid grid-cols-2 gap-y-5 gap-x-20 ${
-                index === 0 && "lg:grid-cols-4"
-              }`}
-            >
-              {skill.items.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex justify-between items-center gap-5"
-                >
-                  <div className="flex items-center space-x-2">
-                    <span>{item.icon}</span>
-                    <span>{item.name}</span>
-                  </div>
-                  <div className="flex gap-1">
-                    <>
-                      {[...Array(item.stars)].map((_, idx) => (
-                        <FaStar key={idx} className="text-yellow-500/50" />
-                      ))}
-                    </>
-                    <>
-                      {[...Array(item.halfStars)].map((_, idx) => (
-                        <FaStarHalf key={idx} className="text-yellow-500/50" />
-                      ))}
-                    </>
-                    <>
-                      {[...Array(5 - item.stars - item.halfStars)].map(
-                        (_, idx) => (
-                          <FaRegStar key={idx} className="text-gray-500" />
-                        )
-                      )}
-                    </>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <Category key={index} index={index} sc={skill} />
         ))}
       </div>
     </motion.div>

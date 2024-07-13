@@ -19,7 +19,7 @@ function TechStack() {
       transition={{ duration: 1, delay: 2 }}
       className="lg:flex lg:items-center lg:justify-center w-full px-12 lg:px-0 py-10 lg:py-24"
     >
-      <p className="text-gray-200 text-center lg:text-left mr-6 border-b border-gray-600 pb-4 md:border-none md:pb-0">
+      <p className="text-gray-200 text-center lg:text-left mr-6 border-b border-gray-600 pb-4 md:border-none md:pb-0 w-full">
         My Tech Stack
       </p>
       <div className="flex justify-center items-center text-4xl lg:text-7xl gap-4 pt-2 lg:pt-0 mt-4 md:mt-0">

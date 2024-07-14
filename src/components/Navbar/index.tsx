@@ -43,17 +43,17 @@ export default function Navbar() {
 
         <ul className="hidden lg:flex gap-12 z-10 cursor-pointer">
           <li>
-            <Link to="skills" smooth={true} offset={50} duration={500}>
+            <Link to="skills" smooth={true} offset={0} duration={500}>
               Skills
             </Link>
           </li>
           <li>
-            <Link to="portfolio" smooth={true} offset={50} duration={500}>
+            <Link to="portfolio" smooth={true} offset={0} duration={500}>
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to="contract" smooth={true} offset={50} duration={500}>
+            <Link to="contract" smooth={true} offset={-150} duration={500}>
               Contract
             </Link>
           </li>
@@ -79,7 +79,7 @@ export default function Navbar() {
                 to="about"
                 onClick={closeNav}
                 smooth={true}
-                offset={50}
+                offset={-150}
                 duration={500}
               >
                 About
@@ -90,7 +90,7 @@ export default function Navbar() {
                 to="skills"
                 onClick={closeNav}
                 smooth={true}
-                offset={50}
+                offset={-150}
                 duration={500}
               >
                 Skills
@@ -101,7 +101,7 @@ export default function Navbar() {
                 to="portfolio"
                 onClick={closeNav}
                 smooth={true}
-                offset={50}
+                offset={-150}
                 duration={500}
               >
                 Portfolio
@@ -112,7 +112,7 @@ export default function Navbar() {
                 to="contract"
                 onClick={closeNav}
                 smooth={true}
-                offset={50}
+                offset={-150}
                 duration={500}
               >
                 Contract

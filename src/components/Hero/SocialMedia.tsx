@@ -1,7 +1,7 @@
 import { GrDocumentPdf } from "react-icons/gr"
 import { motion } from "framer-motion"
 import { SiGithub, SiLinkedin, SiGitee, SiWechat } from "react-icons/si"
-
+import { Link } from "react-router-dom"
 export default function SocialMedia() {
   return (
     <>
@@ -19,10 +19,12 @@ export default function SocialMedia() {
           }}
           className="cursor-pointer z-10 rounded-lg font-bold text-gray-200 lg:w-auto p-4 border border-cyan-200"
         >
-          <div className="flex items-center gap-2">
-            <GrDocumentPdf />
-            <span>Download CV</span>
-          </div>
+          <Link to="/cv">
+            <div className="flex items-center gap-2">
+              <GrDocumentPdf />
+              <span>Download CV</span>
+            </div>
+          </Link>
         </motion.button>
 
         <div className="flex gap-6 text-4xl lg:text-6xl text-jonathan-light z-20">

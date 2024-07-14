@@ -30,3 +30,7 @@ span {
     rgb(33, 33, 33)
   );
 }
+
+.split-line {
+  @apply lg:border-t border-separate border-jonathan-light/10;
+}

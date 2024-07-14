@@ -56,8 +56,8 @@ function Experience() {
               <p className="text-gray-300">{item.period}</p>
             </div>
             <div className="mt-4 text-gray-400">
-              {item.description.map((item) => (
-                <p>{item}</p>
+              {item.description.map((item, index) => (
+                <p key={index}>{item}</p>
               ))}
             </div>
           </motion.div>

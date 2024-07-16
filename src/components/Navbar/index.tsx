@@ -43,6 +43,11 @@ export default function Navbar() {
 
         <ul className="hidden lg:flex gap-12 z-10 cursor-pointer">
           <li>
+            <Link to="about" smooth={true} offset={-150} duration={500}>
+              Profile
+            </Link>
+          </li>
+          <li>
             <Link to="skills" smooth={true} offset={0} duration={500}>
               Skills
             </Link>
@@ -82,7 +87,7 @@ export default function Navbar() {
                 offset={-150}
                 duration={500}
               >
-                About
+                Profile
               </Link>
             </li>
             <li>

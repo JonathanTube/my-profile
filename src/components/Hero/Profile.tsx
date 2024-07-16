@@ -23,10 +23,11 @@ const wordCloudTexts: string[] = [
   "Jenkins",
 ]
 
+const DEFAULT_RADIUS = 250
 function Profile() {
   const tagCloudRef = useRef<TC | null>(null)
   const [wordCloudOptions, setWordCloudOptions] = useState<TagCloudOptions>({
-    radius: 100,
+    radius: DEFAULT_RADIUS,
     maxSpeed: "fast",
     initSpeed: "normal",
     deceleration: 1,
@@ -37,11 +38,11 @@ function Profile() {
 
   const calcWordCloudRadius = () => {
     const { innerWidth } = window
-    let radius = 300
+    let radius = DEFAULT_RADIUS
     if (innerWidth < 1024) {
       radius = 100
     } else if (innerWidth < 1280) {
-      radius = 100
+      radius = 200
     }
     setWordCloudOptions({
       ...wordCloudOptions,
@@ -71,7 +72,7 @@ function Profile() {
 
   return (
     <div className="relative pointer-events-none">
-      <div id="word-cloud" className="absolute inset-0" />
+      <div id="word-cloud" className="absolute inset-0 flex items-end" />
 
       <motion.img
         src={JonathanOutline}

@@ -28,13 +28,13 @@ const experiences = [
     company: "AsiaInfo fo Technology Ltd.",
     period: "2008 ~ 2012",
     description: [
-      "Contributed to value-added servrvice systems by developing solutions, perfoforming testing, anddebugging, enhancing customer satisfafaction and telecom fufunctionality.",
+      "Contributed to value-added servrvice systems by developing solutions, perfoforming testing, anddebugging, enhancing customer satisfafaction and telecom functionality.",
     ],
   },
 ]
 function Experience() {
   return (
-    <div className="px-8 max-w-screen-md mx-auto split-line my-24 pt-24">
+    <div className="px-8 max-w-screen-md mx-auto split-line my-0 pt-0 md:my-24 md:pt-24">
       <h1 className="text-4xl text-gray-200 font-bold text-center mb-12">
         Experience
       </h1>

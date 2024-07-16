@@ -53,8 +53,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="contract" smooth={true} offset={-150} duration={500}>
-              Contract
+            <Link to="contact" smooth={true} offset={0} duration={500}>
+              Contact
             </Link>
           </li>
         </ul>
@@ -90,7 +90,7 @@ export default function Navbar() {
                 to="skills"
                 onClick={closeNav}
                 smooth={true}
-                offset={-150}
+                offset={-100}
                 duration={500}
               >
                 Skills
@@ -101,7 +101,7 @@ export default function Navbar() {
                 to="portfolio"
                 onClick={closeNav}
                 smooth={true}
-                offset={-150}
+                offset={-100}
                 duration={500}
               >
                 Portfolio
@@ -109,13 +109,13 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                to="contract"
+                to="contact"
                 onClick={closeNav}
                 smooth={true}
-                offset={-150}
+                offset={200}
                 duration={500}
               >
-                Contract
+                Contact
               </Link>
             </li>
           </ul>

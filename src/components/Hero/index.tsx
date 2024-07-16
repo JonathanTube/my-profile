@@ -1,9 +1,11 @@
 import { motion } from "framer-motion"
 import Intro from "./Intro"
-import SocialMedia from "./SocialMedia"
+import SocialMedia from "../SocialMedia"
 import Profile from "./Profile"
 import TechStack from "./TechStack"
 import { ShinyEffect } from "../ShinyEffect"
+import { GrDocumentPdf } from "react-icons/gr"
+import { Link } from "react-router-dom"
 
 function Hero() {
   return (
@@ -16,7 +18,31 @@ function Hero() {
           transition={{ duration: 1 }}
         >
           <Intro />
-          <SocialMedia />
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex flex-col lg:flex-row items-center gap-6 my-4 lg:mb-0"
+          >
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
+              }}
+              className="cursor-pointer z-10 rounded-lg font-bold text-gray-200 lg:w-auto p-4 border border-cyan-200"
+            >
+              <Link to="/cv">
+                <div className="flex items-center gap-2">
+                  <GrDocumentPdf />
+                  <span>Download CV</span>
+                </div>
+              </Link>
+            </motion.button>
+
+            <SocialMedia />
+          </motion.div>
         </motion.div>
         <Profile />
       </div>

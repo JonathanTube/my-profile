@@ -182,7 +182,7 @@ function Skills() {
       initial={{ opacity: 0, translateY: "-50px" }}
       whileInView={{ opacity: 1, translateY: "0px" }}
       transition={{ duration: 1, delay: 0.5 }}
-      className="max-w-screen-xl mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:pt-24 split-line"
+      className="max-w-screen-lg mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:pt-24 split-line"
       id="skills"
     >
       <h2 className="text-3xl font-bold mb-4 text-center">Skills</h2>

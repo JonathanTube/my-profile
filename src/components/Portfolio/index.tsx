@@ -1,6 +1,7 @@
-import { SiGithub } from "react-icons/si"
 import { ShinyEffect } from "../ShinyEffect"
 import { motion } from "framer-motion"
+import { FaLink } from "react-icons/fa"
+import { SiGithub } from "react-icons/si"
 
 const projects = [
   {
@@ -8,8 +9,8 @@ const projects = [
     summary:
       "Create a platform connecting businesses, elevator technicians, and service providers for streamlined elevator maintenance.",
     image: "/projects/lifthub_org_dashboard.png",
-    url: "https://org.lifthub.cn",
-    github: "https://github.com",
+    url: "https://lifthub.cn",
+    github: "https://github.com/JonathanTube/lift-hub",
     techStack: ["react", "nextjs", "tailwindcss", "ant design"],
   },
   {
@@ -49,7 +50,7 @@ const projects = [
 function Portfolio() {
   return (
     <div
-      className="max-w-screen-xl mx-auto md:mt-24 md:pt-24 relative text-center px-4 split-line"
+      className="max-w-screen-lg mx-auto md:mt-10 pt-10 md:pt-24 relative text-center px-4 split-line overflow-hidden"
       id="portfolio"
     >
       <h2 className="text-3xl font-bold text-gray-200 mb-10">Portfolio</h2>
@@ -61,7 +62,7 @@ function Portfolio() {
           }`}
         >
           <motion.div
-            className="w-full md:w-1/2 md:h-80 shadow-2xl shadow-jonathan-light/20"
+            className="md:w-1/2 md:h-80 shadow-2xl shadow-jonathan-light/20"
             initial={{ opacity: 0, translateY: "-50px" }}
             whileInView={{ opacity: 1, translateY: "0px" }}
             transition={{ duration: 1.2, delay: 0.2 }}
@@ -80,13 +81,15 @@ function Portfolio() {
             <div className="flex space-x-4">
               <a
                 href={item.url}
-                className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300 flex items-center justify-center"
+                className="px-4 py-2 bg-jonathan-main text-gray-200 rounded-lg hover:bg-jonathan-main/60 transition duration-300 flex items-center justify-center"
               >
-                Visit
+                <FaLink />
+                <span className="ml-2">Visit</span>
               </a>
+
               <a
-                href={item.url}
-                className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300 flex items-center justify-center"
+                href={item.github}
+                className="px-4 py-2 bg-jonathan-main text-gray-200 rounded-lg hover:bg-jonathan-main/60 transition duration-300 flex items-center justify-center"
               >
                 <SiGithub />
               </a>
@@ -96,8 +99,8 @@ function Portfolio() {
       ))}
 
       <div className="absolute inset-0 -z-10">
-        <ShinyEffect top={-400} left={0} size={1280} />
-        <ShinyEffect top={800} left={200} size={1280} />
+        <ShinyEffect top={-400} left={0} size={1024} />
+        <ShinyEffect top={800} left={200} size={1024} />
       </div>
     </div>
   )

@@ -4,31 +4,31 @@ const experiences = [
     company: "Freelancer",
     period: "2023 ~ Present",
     description: [
-      "Developed an elevator appointment system, increasing technician efficiency by 25% using React, Next.js, Tailwincss, and Ant Design.",
-      "Built a photovoltaic power monitoring system with Vue and ElementUI, optimizing generation efficiency by 15%.",
-      "Created a smart cababinet system with Vue3, Antd, and Java, ensuring secure material storage incampus lababs and reduducing hazardous incidents by 10%.",
+      "Developed an elevator appointment system using React, Next.js, Tailwincss, and Ant Design.",
+      "Built a photovoltaic power monitoring system with Vue and ElementUI.",
+      "Created a smart cabinet system with Vue3, Antd, and Java, ensuring secure material storage in campus labs and reducing hazardous incidents by 10%.",
     ],
   },
   {
     company: "NkStar Ltd.",
     period: "2020 ~ 2023",
     description: [
-      "Oversaw softftware development teams and client communication, achieving projoject objbjectives byimplementing agile methodologies, fofostering collababoration, and reduducing projoject delays by 20%.",
+      "Developed management systems for enterprises like ERP and OA Oversaw software development teams and client communication, achieving project objectives by fostering collaboration, and reducing project delays by 20%.",
     ],
   },
   {
     company: "Wisedu Education Ltd.",
     period: "2012 ~ 2020",
     description: [
-      "Led the development of a campus e-commerce system, integrating third-party supuppliers andfifinancial systems, resulting in 40% user adoption growth.",
-      "Implemented auautomated SKU KU management and reimbursement processes with Vue2, ElementUI, Java, Spring, MySQL, Elasticsearch, and Alibababa Cloud, decreasing manual lababor by 30%.",
+      "Led the development of a campus e-commerce system, integrating third-party suppliers and financial systems, resulting in 40% user adoption growth.",
+      "Implemented automated SKU management and reimbursement processes with Vue2, ElementUI, Java, Spring, MySQL, Elasticsearch, and Alibaba Cloud, decreasing manual labor by 30%.",
     ],
   },
   {
     company: "AsiaInfo fo Technology Ltd.",
     period: "2008 ~ 2012",
     description: [
-      "Contributed to value-added servrvice systems by developing solutions, perfoforming testing, anddebugging, enhancing customer satisfafaction and telecom functionality.",
+      "Contributed to value-added service systems by developing solutions, performing testing, and debugging, and enhancing customer satisfaction and telecom functionality.",
     ],
   },
 ]
@@ -47,15 +47,15 @@ function Experience() {
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 1 }}
-            className="border border-jonathan-light p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-jonathan-light/10"
+            className="border border-jonathan-light p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-tr from-jonathan-main/80 to-jonathan-light/5"
           >
             <div className="flex justify-between">
-              <h2 className="text-gray-100 text-2xl font-semibold">
+              <h2 className="text-white text-2xl font-semibold">
                 {item.company}
               </h2>
-              <p className="text-gray-300">{item.period}</p>
+              <p className="text-gray-200">{item.period}</p>
             </div>
-            <div className="mt-4 text-gray-400">
+            <div className="mt-4 text-gray-300">
               {item.description.map((item, index) => (
                 <p key={index}>{item}</p>
               ))}

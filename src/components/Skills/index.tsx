@@ -48,7 +48,7 @@ const skills = [
         name: "React",
         icon: <SiReact className="text-cyan-500" />,
         stars: 3,
-        halfStars: 0,
+        halfStars: 1,
       },
       {
         name: "Vue",
@@ -76,25 +76,25 @@ const skills = [
       {
         name: "Node Js",
         icon: <SiNodedotjs className="text-lime-500" />,
-        stars: 4,
+        stars: 2,
         halfStars: 0,
       },
       {
         name: "Express",
         icon: <SiExpress className="text-yellow-300" />,
-        stars: 4,
+        stars: 2,
         halfStars: 0,
       },
       {
         name: "Java",
         icon: <RiJavaLine className="text-cyan-500" />,
-        stars: 4,
+        stars: 5,
         halfStars: 0,
       },
       {
         name: "Spring",
         icon: <SiSpring className="text-green-500" />,
-        stars: 4,
+        stars: 5,
         halfStars: 0,
       },
     ],
@@ -187,12 +187,8 @@ function Skills() {
     >
       <h2 className="text-3xl font-bold mb-4 text-center">Skills</h2>
       <p className="text-center mb-8">
-        I am a full stack developer with a strong background in frontend and
-        backend. <br />I have experience in building web applications with these
-        technologies. Check them
-        <a href="#" className="underline ml-2">
-          there
-        </a>
+        As a skilled full-stack developer, I specialize in building web
+        applications with these technologies.
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-4 lg:gap-6 mt-5 w-full max-w-screen-xl">
         {skills.map((skill, index) => (

@@ -36,14 +36,14 @@ export default function Navbar() {
       <div className="max-w-screen-2xl mx-auto flex justify-between text-gray-100 text-xl items-center px-6 h-20">
         <div className="flex items-center cursor-pointer">
           <img alt="logo" src="/code.svg" className="w-6 mr-4" />
-          <Link to="about" smooth={true} offset={-150} duration={500}>
+          <Link to="about" smooth={true} offset={-200} duration={500}>
             Jonathan.K
           </Link>
         </div>
 
         <ul className="hidden lg:flex gap-12 z-10 cursor-pointer">
           <li>
-            <Link to="about" smooth={true} offset={-150} duration={500}>
+            <Link to="about" smooth={true} offset={-200} duration={500}>
               Profile
             </Link>
           </li>
@@ -58,7 +58,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} offset={0} duration={500}>
+            <Link to="contact" smooth={true} offset={-80} duration={500}>
               Contact
             </Link>
           </li>

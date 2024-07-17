@@ -2,46 +2,30 @@ import { ShinyEffect } from "../ShinyEffect"
 import { motion } from "framer-motion"
 import { FaLink } from "react-icons/fa"
 import { SiGithub } from "react-icons/si"
+import { Project } from "../../types/project"
 
-const projects = [
+const projects: Project[] = [
   {
     title: "LiftHub",
     summary:
       "Create a platform connecting businesses, elevator technicians, and service providers for streamlined elevator maintenance.",
-    image: "/projects/lifthub_org_dashboard.png",
+    image: "https://profile.mincode.fun/lifthub0.jpg",
     url: "https://lifthub.cn",
-    github: "https://github.com/JonathanTube/lift-hub",
     techStack: ["react", "nextjs", "tailwindcss", "ant design"],
   },
   {
-    title: "Campus Laboratory Smart Cabinet Management System(PC)",
+    title: "Campus Lab Smart Cabinet Management System",
     summary:
       "Develop a smart cabinet management system for campus laboratories to efficiently and securely store and manage materials, including hazardous substances.",
-    image: "/projects/cabinet_pc.png",
+    image: "https://profile.mincode.fun/cabinet.jpg",
     url: "https://140.143.202.23:9001/chem",
     techStack: ["vue3", "vuex", "ElementUI", "java", "spring"],
-  },
-  {
-    title: "Campus Laboratory Smart Cabinet Management System(H5)",
-    summary:
-      "Develop a smart cabinet management system for campus laboratories to efficiently and securely store and manage materials, including hazardous substances.",
-    image: "/projects/cabinet_h5.png",
-    url: "https://140.143.202.23:9001/h5/",
-    techStack: ["vue", "vuex", "uview", "java", "spring"],
-  },
-  {
-    title: "Photovoltaic Power Generation Efficiency Management System",
-    summary:
-      "Develop a system to monitor, analyze, and optimize the efficiency of photovoltaic power generation facilities.",
-    image: "/projects/PPGEMS1.png",
-    url: "",
-    techStack: ["vue", "vuex", "uniapp"],
   },
   {
     title: "Campus E-commerce",
     summary:
       "Unified management of supplier SKU, integrating product purchasing and expense reimbursement processes, enabling university professors to select teaching-related products from designated supplier SKUs without needing to apply for reimbursement for each purchase.",
-    image: "/projects/campus-e-commerce.png",
+    image: "https://profile.mincode.fun/E-commerce.jpg",
     url: "https://ucaigou.net/",
     techStack: ["vue", "vuex", "ElementUI", "java", "spring"],
   },
@@ -50,7 +34,7 @@ const projects = [
 function Portfolio() {
   return (
     <div
-      className="max-w-screen-lg mx-auto md:mt-10 pt-10 md:pt-24 relative text-center px-4 split-line overflow-hidden"
+      className="max-w-screen-lg mx-auto md:mt-10 pt-10 md:pt-24 relative px-4 split-line overflow-hidden"
       id="portfolio"
     >
       <h2 className="text-3xl font-bold text-gray-200 mb-10">Portfolio</h2>
@@ -80,6 +64,7 @@ function Portfolio() {
             <p className="text-gray-300 mb-4">{item.summary}</p>
             <div className="flex space-x-4">
               <a
+                target="_blank"
                 href={item.url}
                 className="px-4 py-2 bg-jonathan-main text-gray-200 rounded-lg hover:bg-jonathan-main/60 transition duration-300 flex items-center justify-center"
               >
@@ -87,12 +72,14 @@ function Portfolio() {
                 <span className="ml-2">Visit</span>
               </a>
 
-              <a
-                href={item.github}
-                className="px-4 py-2 bg-jonathan-main text-gray-200 rounded-lg hover:bg-jonathan-main/60 transition duration-300 flex items-center justify-center"
-              >
-                <SiGithub />
-              </a>
+              {item.github && (
+                <a
+                  href={item.github}
+                  className="px-4 py-2 bg-jonathan-main text-gray-200 rounded-lg hover:bg-jonathan-main/60 transition duration-300 flex items-center justify-center"
+                >
+                  <SiGithub />
+                </a>
+              )}
             </div>
           </div>
         </div>

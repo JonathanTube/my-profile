@@ -10,8 +10,9 @@ export default function Intro() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="text-gray-200 text-5xl lg:text-7xl italic tracking-tighter mb-4"
       >
-        Hello, I'm <br />
+        Hi, I'm <br />
         <span className="text-jonathan-light">Jonathan Kong</span>
+        <span className="fi fi-cn text-2xl md:text-4xl ml-5 rounded"></span>
       </motion.p>
 
       <TypeAnimation
@@ -42,7 +43,7 @@ export default function Intro() {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-gray-200 max-w-[500px] lg:max-w-[600px] text-lg lg:text-2xl mb-6"
       >
-        I'm a passionate fullstack web developer with over 10 years of
+        I'm a passionate fullstack web developer with over 10+ years of
         experience.
       </motion.p>
     </>

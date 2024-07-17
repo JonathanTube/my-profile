@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import JonathanOutline from "../../assets/JonathanOutline.png"
 import TagCloud, { TagCloud as TC, TagCloudOptions } from "TagCloud"
 import { useEffect, useRef, useState } from "react"
 
@@ -75,7 +74,7 @@ function Profile() {
       <div id="word-cloud" className="absolute inset-0 flex items-end" />
 
       <motion.img
-        src={JonathanOutline}
+        src="https://profile.mincode.fun/JonathanOutline.png"
         alt="Profile"
         className="w-[300px] lg:w-[400px] mt-10 lg:mt-0"
         initial={{

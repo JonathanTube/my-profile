@@ -34,3 +34,26 @@ span {
 .split-line {
   @apply lg:border-t border-separate border-jonathan-light/10;
 }
+
+.cv {
+  @apply bg-gray-100 min-h-screen pt-10 pb-10 md:pb-40 px-5;
+
+  h3 {
+    @apply text-lg md:text-lg font-bold mt-10;
+  }
+
+  h4 {
+    @apply text-base font-bold mt-2;
+  }
+
+  p {
+    @apply mt-5 text-slate-800 text-base;
+  }
+
+  ul {
+    @apply mb-5;
+    li {
+      @apply ml-4 list-disc mt-2;
+    }
+  }
+}

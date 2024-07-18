@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div>
       <div className="text-gray-300 my-10 md:my-0">
-        <h3 className="text-4xl font-semibold mb-5 flex items-center gap-4">
+        <h3 className="text-2xl md:text-4xl font-semibold mb-5 flex items-center gap-4">
           <span>About Me</span>
           <motion.div
             animate={{ rotate: [0, 360] }}
@@ -29,7 +29,7 @@ function AboutMe() {
         </p>
       </div>
 
-      <div className="flex items-center mt-5 md:mt-10 gap-7">
+      <div className="flex items-center mt-5 md:mt-10 gap-2 md:gap-7">
         <div className="bg-gray-800/40 p-5 rounded-lg bg-gradient-to-tr from-jonathan-gray to-jonathan-dark">
           <h3 className="md:text-4xl text-2xl font-semibold text-white">
             3<span className="text-jonathan-light ml-1">+</span>

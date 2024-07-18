@@ -37,7 +37,9 @@ function Portfolio() {
       className="max-w-screen-lg mx-auto md:mt-10 pt-10 md:pt-24 relative px-4 split-line overflow-hidden"
       id="portfolio"
     >
-      <h2 className="text-3xl font-bold text-gray-200 mb-10">Portfolio</h2>
+      <h2 className="text-2xl md:text-4xl text-center font-bold text-gray-200 mb-10">
+        Portfolio
+      </h2>
       {projects.map((item, index) => (
         <div
           key={index}

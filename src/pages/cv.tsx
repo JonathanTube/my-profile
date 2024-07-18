@@ -14,7 +14,7 @@ export default function CV() {
       </a>
 
       <div className="bg-white max-w-screen-lg mx-auto px-5 pt-10 pb-20 shadow-lg rounded mt-10">
-        <header className="flex items-center justify-between ">
+        <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-5 md:gap-0">
           <div>
             <h1 className="text-xl md:text-2xl font-bold">Jonathan.K</h1>
             <h2 className="text-base md:text-xl font-semibold">
@@ -23,12 +23,12 @@ export default function CV() {
           </div>
           <div>
             <a className="block" href="mailto:Jonathan@mincode.fun">
-              Jonathan@mincode.fun
+              Email:&nbsp;Jonathan@mincode.fun
             </a>
             {/* <a className="block" href="tel:+8617602553940">
               (+86)17602553940
             </a> */}
-            <div>Yangzhou, Jiangsu, China</div>
+            <div>Location:&nbsp;Yangzhou, Jiangsu, China</div>
           </div>
         </header>
 

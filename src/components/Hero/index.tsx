@@ -28,15 +28,17 @@ function Hero() {
           >
             <motion.button
               whileHover={{
-                scale: 1.05,
+                scale: 1.04,
                 boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
               }}
               className="cursor-pointer z-10 rounded-lg font-bold text-gray-200 lg:w-auto p-4 border border-cyan-200"
             >
-              <Link to="/cv">
-                <div className="flex items-center gap-2">
+              <Link to="/cv" target="_blank">
+                <div className="flex items-center gap-2 text-jonathan-light">
                   <GrDocumentPdf />
-                  <span>Download CV</span>
+                  <span className="text-jonathan-light font-light">
+                    Download CV
+                  </span>
                 </div>
               </Link>
             </motion.button>

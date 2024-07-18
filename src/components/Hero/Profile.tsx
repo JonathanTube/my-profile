@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import TagCloud, { TagCloud as TC, TagCloudOptions } from "TagCloud"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useLayoutEffect, useRef, useState } from "react"
 
 const wordCloudTexts: string[] = [
   "HTML",
@@ -35,25 +35,26 @@ function Profile() {
     keep: false, // Whether to keep rolling after mouse out area. Default true (decelerate to rolling init speed, and keep rolling with mouse).
   })
 
-  const calcWordCloudRadius = () => {
-    const { innerWidth } = window
-    let radius = DEFAULT_RADIUS
-    if (innerWidth < 1024) {
-      radius = 100
-    } else if (innerWidth < 1280) {
-      radius = 200
-    }
-    setWordCloudOptions({
-      ...wordCloudOptions,
-      radius,
-    })
-  }
-
   useEffect(() => {
+    const calcWordCloudRadius = () => {
+      const { innerWidth } = window
+      let radius = DEFAULT_RADIUS
+      if (innerWidth < 1024) {
+        radius = 150
+      } else if (innerWidth < 1280) {
+        radius = 200
+      }
+      setWordCloudOptions({
+        ...wordCloudOptions,
+        radius,
+      })
+    }
+
+    calcWordCloudRadius()
     window.onresize = () => {
       calcWordCloudRadius()
     }
-  })
+  }, [])
 
   useEffect(() => {
     // In React strict mode this will be executed twice, there will be show the word cloud twice either.
@@ -76,14 +77,12 @@ function Profile() {
       <motion.img
         src="https://profile.mincode.fun/JonathanOutline.png"
         alt="Profile"
-        className="w-[300px] lg:w-[400px] mt-10 lg:mt-0"
+        className="w-[300px] lg:w-[400px]"
         initial={{
-          translateY: "0",
           opacity: 0,
           scale: 0.1,
         }}
         whileInView={{
-          translateY: "-30px",
           opacity: 0.1,
           scale: 1,
         }}

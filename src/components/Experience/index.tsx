@@ -35,7 +35,7 @@ const experiences = [
 function Experience() {
   return (
     <div className="px-8 max-w-screen-md mx-auto split-line my-0 pt-0 md:my-24 md:pt-24">
-      <h1 className="text-4xl text-gray-200 font-bold text-center mb-12">
+      <h1 className="text-2xl md:text-4xl text-gray-200 font-bold text-center mb-12">
         Experience
       </h1>
       {/* <img src="/experience.jpg" /> */}
@@ -49,8 +49,8 @@ function Experience() {
             transition={{ duration: 1 }}
             className="border border-jonathan-light p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-tr from-jonathan-main/80 to-jonathan-light/5"
           >
-            <div className="flex justify-between">
-              <h2 className="text-white text-2xl font-semibold">
+            <div className="flex flex-col md:flex-row gap-1 justify-between">
+              <h2 className="text-white text-base md:text-2xl font-semibold">
                 {item.company}
               </h2>
               <p className="text-gray-200">{item.period}</p>

@@ -10,11 +10,11 @@ body {
 }
 
 h2 {
-  @apply text-xl lg:text-4xl;
+  @apply text-xl md:text-4xl;
 }
 
 p {
-  @apply text-xl tracking-tight leading-relaxed;
+  @apply text-base md:text-lg leading-relaxed;
 }
 
 span {
@@ -47,7 +47,7 @@ span {
   }
 
   p {
-    @apply mt-5 text-slate-800 text-base;
+    @apply mt-5 text-slate-800 text-sm md:text-base;
   }
 
   ul {

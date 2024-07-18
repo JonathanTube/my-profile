@@ -185,12 +185,14 @@ function Skills() {
       className="max-w-screen-lg mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:pt-24 split-line"
       id="skills"
     >
-      <h2 className="text-3xl font-bold mb-4 text-center">Skills</h2>
+      <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center">
+        Skills
+      </h2>
       <p className="text-center mb-8">
         As a skilled full-stack developer, I specialize in building web
         applications with these technologies.
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-4 lg:gap-6 mt-5 w-full max-w-screen-xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-10 lg:gap-6 mt-5 w-full max-w-screen-xl">
         {skills.map((skill, index) => (
           <Category key={index} index={index} sc={skill} />
         ))}

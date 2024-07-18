@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import TagCloud, { TagCloud as TC, TagCloudOptions } from "TagCloud"
-import { useEffect, useLayoutEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 const wordCloudTexts: string[] = [
   "HTML",

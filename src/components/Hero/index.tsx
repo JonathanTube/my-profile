@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 
 function Hero() {
   return (
-    <div className="mt-5 md:mt-20 max-w-screen-xl mx-auto relative" id="about">
+    <div className="mt-5 md:mt-20 max-w-screen-xl mx-auto relative" id="bio">
       <div className="grid mx-5 lg:grid-cols-2 lg:mx-5 place-items-center gap-5">
         <motion.div
           initial={{ opacity: 0, y: -50 }}

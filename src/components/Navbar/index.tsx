@@ -36,14 +36,14 @@ export default function Navbar() {
       <div className="max-w-screen-2xl mx-auto flex justify-between text-gray-100 text-xl items-center px-6 h-20">
         <div className="flex items-center cursor-pointer">
           <img alt="logo" src="/code.svg" className="w-6 mr-4" />
-          <Link to="about" smooth={true} offset={-200} duration={500}>
+          <Link to="bio" smooth={true} offset={-200} duration={500}>
             Jonathan.K
           </Link>
         </div>
 
         <ul className="hidden lg:flex gap-12 z-10 cursor-pointer">
           <li>
-            <Link to="about" smooth={true} offset={-200} duration={500}>
+            <Link to="bio" smooth={true} offset={-200} duration={500}>
               Profile
             </Link>
           </li>
@@ -76,12 +76,12 @@ export default function Navbar() {
           initial={false}
           animate={nav ? "open" : "closed"}
           variants={menuVariants}
-          className="fixed left-0 top-0 w-full min-h-screen bg-gray-900 z-40 cursor-pointer"
+          className="fixed inset-0 w-screen h-screen bg-gray-900 z-40 cursor-pointer scroll-none overflow-hidden"
         >
-          <ul className="font-semibold text-4xl space-y-8 mt-24 text-center">
+          <ul className="font-semibold text-2xl space-y-8 mt-24 text-center">
             <li>
               <Link
-                to="about"
+                to="bio"
                 onClick={closeNav}
                 smooth={true}
                 offset={-150}

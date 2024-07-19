@@ -1,12 +1,12 @@
 import { BiSmile } from "react-icons/bi"
 import { motion } from "framer-motion"
 
-function AboutMe() {
+function Bio() {
   return (
     <div>
       <div className="text-gray-300 my-10 md:my-0">
         <h3 className="text-2xl md:text-4xl font-semibold mb-5 flex items-center gap-4">
-          <span>About Me</span>
+          <span>Bio</span>
           <motion.div
             animate={{ rotate: [0, 360] }}
             transition={{
@@ -19,13 +19,11 @@ function AboutMe() {
           </motion.div>
         </h3>
         <p className="text-justify leading-7 mx-auto">
-          Full-Stack Developer with 10+ years of experience in developing web
-          applications, with expertise in both frontend and backend development.
-          Proficient in technologies like HTML, CSS, JavaScript, Java, and
-          various frameworks such as Vue.js, React.js. Passionate about building
-          high-quality, user-friendly web applications that drive innovation and
-          deliver business value. Strong problem-solving skills and ability to
-          work effectively in cross-functional teams.
+          I'm Jonathan, an experienced software developer with a 10-year
+          background in Java development. I've transitioned to frontend
+          development, specializing in Vue, React, and Node. As a lifelong
+          learner, I thrive in remote teamwork environments and enjoy using my
+          expertise to build exceptional web experiences.
         </p>
       </div>
 
@@ -65,4 +63,4 @@ function AboutMe() {
   )
 }
 
-export default AboutMe
+export default Bio

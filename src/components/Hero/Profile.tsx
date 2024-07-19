@@ -73,11 +73,8 @@ function Profile() {
   }, [wordCloudOptions])
 
   return (
-    <div className="relative pointer-events-none">
-      <div
-        id="word-cloud"
-        className="absolute inset-0 flex items-end min-w-64 min-h-64"
-      />
+    <div className="relative pointer-events-none min-w-64 min-h-64">
+      <div id="word-cloud" className="absolute inset-0 flex items-end" />
 
       <motion.img
         src="https://profile.mincode.fun/JonathanOutline.png"

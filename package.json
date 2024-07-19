@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/file-saver": "^2.0.7",
     "@types/react-scroll": "^1.8.10",
     "TagCloud": "^2.5.0",
+    "file-saver": "^2.0.5",
     "flag-icons": "^7.2.3",
     "framer-motion": "^11.3.2",
     "react": "^18.3.1",

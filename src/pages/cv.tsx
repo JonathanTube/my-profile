@@ -1,13 +1,20 @@
 import { BiDownload } from "react-icons/bi"
+import { saveAs } from "file-saver"
 
 export default function CV() {
+  const downloadCV = () => {
+    const url =
+      "https://profile.mincode.fun/Jonathan%20Fullstack%20Developer.pdf"
+    saveAs(url, "Jonathan's CV.pdf")
+  }
   return (
     <div className="cv">
       <a
-        href="https://profile.mincode.fun/Jonathan%20Fullstack%20Developer.pdf"
-        target="_blank"
-        download="Jonathan's CV.pdf"
-        className="text-center w-48 h-12 mx-auto rounded bg-slate-600 text-white hover:bg-slate-600/90 font-semibold cursor-pointer flex items-center justify-center"
+        onClick={downloadCV}
+        href="#"
+        className="text-center w-48 h-12 mx-auto rounded bg-slate-600 text-white
+         hover:bg-slate-600/90 font-semibold cursor-pointer flex items-center justify-center
+         sticky top-10"
       >
         <BiDownload className="text-gray-300 text-xl" />
         <a className="ml-2">Download CV</a>

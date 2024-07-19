@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import TagCloud, { TagCloud as TC, TagCloudOptions } from "TagCloud"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useLayoutEffect, useRef, useState } from "react"
 
 const wordCloudTexts: string[] = [
   "HTML",
@@ -56,15 +56,17 @@ function Profile() {
     }
   }, [])
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // In React strict mode this will be executed twice, there will be show the word cloud twice either.
     // we need to destroy the previous component if it exists.
-    if (tagCloudRef.current !== null) tagCloudRef.current.destroy()
-    tagCloudRef.current = TagCloud(
-      "#word-cloud",
-      wordCloudTexts,
-      wordCloudOptions
-    )
+    setTimeout(() => {
+      if (tagCloudRef.current !== null) tagCloudRef.current.destroy()
+      tagCloudRef.current = TagCloud(
+        "#word-cloud",
+        wordCloudTexts,
+        wordCloudOptions
+      )
+    }, 2500)
     // return () => {
     //   if (tagCloudRef.current !== null) tagCloudRef.current.destroy()
     // }
@@ -72,7 +74,10 @@ function Profile() {
 
   return (
     <div className="relative pointer-events-none">
-      <div id="word-cloud" className="absolute inset-0 flex items-end" />
+      <div
+        id="word-cloud"
+        className="absolute inset-0 flex items-end min-w-64 min-h-64"
+      />
 
       <motion.img
         src="https://profile.mincode.fun/JonathanOutline.png"

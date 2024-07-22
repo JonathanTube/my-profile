@@ -51,9 +51,13 @@ span {
   }
 
   ul {
-    @apply mb-5;
+    @apply mb-8;
     li {
       @apply ml-4 list-disc mt-2;
     }
+  }
+
+  strong {
+    @apply mx-1;
   }
 }

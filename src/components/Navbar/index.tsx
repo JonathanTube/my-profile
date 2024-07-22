@@ -33,7 +33,7 @@ export default function Navbar() {
 
   return (
     <div className="sticky top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50">
-      <div className="max-w-screen-2xl mx-auto flex justify-between text-gray-100 text-xl items-center px-6 h-20">
+      <div className="max-w-screen-xl mx-auto flex justify-between text-gray-100 text-xl items-center px-6 h-20">
         <div className="flex items-center cursor-pointer">
           <img alt="logo" src="/code.svg" className="w-6 mr-4" />
           <Link to="bio" smooth={true} offset={-200} duration={500}>
@@ -42,22 +42,27 @@ export default function Navbar() {
         </div>
 
         <ul className="hidden lg:flex gap-12 z-10 cursor-pointer">
-          <li>
+          <li className="hover:text-jonathan-light">
             <Link to="bio" smooth={true} offset={-200} duration={500}>
               Profile
             </Link>
           </li>
-          <li>
+          <li className="hover:text-jonathan-light">
             <Link to="skills" smooth={true} offset={0} duration={500}>
               Skills
             </Link>
           </li>
-          <li>
+          <li className="hover:text-jonathan-light">
             <Link to="portfolio" smooth={true} offset={0} duration={500}>
               Portfolio
             </Link>
           </li>
-          <li>
+          <li className="hover:text-jonathan-light">
+            <a href="https://jonathantube.github.io" target="_blank">
+              Blog
+            </a>
+          </li>
+          <li className="hover:text-jonathan-light">
             <Link to="contact" smooth={true} offset={-80} duration={500}>
               Contact
             </Link>
@@ -76,7 +81,7 @@ export default function Navbar() {
           initial={false}
           animate={nav ? "open" : "closed"}
           variants={menuVariants}
-          className="fixed inset-0 w-screen h-screen bg-gray-900 z-40 cursor-pointer scroll-none overflow-hidden"
+          className="fixed inset-0 w-screen h-screen bg-gray-900 z-40 cursor-pointer scroll-none overflow-hidden lg:hidden"
         >
           <ul className="font-semibold text-2xl space-y-8 mt-24 text-center">
             <li>
@@ -111,6 +116,11 @@ export default function Navbar() {
               >
                 Portfolio
               </Link>
+            </li>
+            <li>
+              <a href="https://jonathantube.github.io" target="_blank">
+                Blog
+              </a>
             </li>
             <li>
               <Link

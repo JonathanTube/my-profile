@@ -105,8 +105,8 @@ const skills = [
       {
         name: "MongoDB",
         icon: <SiMongodb className="text-green-600" />,
-        stars: 4,
-        halfStars: 0,
+        stars: 3,
+        halfStars: 1,
       },
       {
         name: "MySql",

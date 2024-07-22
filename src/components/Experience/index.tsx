@@ -4,24 +4,24 @@ const experiences = [
     company: "Freelancer",
     period: "2023 ~ Present",
     description: [
-      "Developed an elevator appointment system using React, Next.js, Tailwincss, and Ant Design.",
+      "Focus on developing web applications using React and Node.js ecosystem.",
+      "Developed an elevator maintenance appointment system using React, Next.js, Tailwincss, and Ant Design.",
       "Built a photovoltaic power monitoring system with Vue and ElementUI.",
-      "Created a smart cabinet system with Vue3, Antd, and Java, ensuring secure material storage in campus labs and reducing hazardous incidents by 10%.",
+      "Created a smart cabinet system with Vue3, Antd, and Java, ensuring secure material storage in campus labs and reducing hazardous incidents.",
     ],
   },
   {
     company: "NkStar Ltd.",
     period: "2020 ~ 2023",
     description: [
-      "Developed management systems for enterprises like ERP and OA Oversaw software development teams and client communication, achieving project objectives by fostering collaboration, and reducing project delays by 20%.",
+      "Developed management systems for enterprises like ERP and OA Oversaw software development teams and client communication, achieving project objectives by fostering collaboration.",
     ],
   },
   {
     company: "Wisedu Education Ltd.",
     period: "2012 ~ 2020",
     description: [
-      "Led the development of a campus e-commerce system, integrating third-party suppliers and financial systems, resulting in 40% user adoption growth.",
-      "Implemented automated SKU management and reimbursement processes with Vue2, ElementUI, Java, Spring, MySQL, Elasticsearch, and Alibaba Cloud, decreasing manual labor by 30%.",
+      "Led the development of a campus e-commerce system, integrating third-party suppliers and financial systems.",
     ],
   },
   {

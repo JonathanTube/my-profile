@@ -4,7 +4,7 @@ import { saveAs } from "file-saver"
 export default function CV() {
   const downloadCV = () => {
     const url =
-      "https://profile.mincode.fun/Jonathan%20Fullstack%20Developer.pdf"
+      "https://profile.mincode.fun/Jonathan%20Full%20Stack%20Developer%20v1.0.0.pdf"
     saveAs(url, "Jonathan's CV.pdf")
   }
   return (
@@ -30,52 +30,57 @@ export default function CV() {
           </div>
           <div>
             <a className="block" href="mailto:Jonathan@mincode.fun">
-              Email:&nbsp;Jonathan@mincode.fun
+              Email:&nbsp;&nbsp;Jonathan@mincode.fun
             </a>
             {/* <a className="block" href="tel:+8617602553940">
               (+86)17602553940
             </a> */}
-            <div>Location:&nbsp;Yangzhou, Jiangsu, China</div>
+            <div>Location:&nbsp;&nbsp;Jiangsu, China</div>
           </div>
         </header>
 
         <main>
           <h3>Summary</h3>
           <p>
-            Full Stack Developer with 10+ years' experience in{" "}
-            <strong>JAVA</strong>,<strong>Node</strong> <strong>HTML</strong>,{" "}
-            <strong>CSS</strong>, and <strong>JavaScript</strong>. Skilled in
-            Spring, Mybatis, Hibernate, Vue and React. Proactive problem-solver
-            committed to mastering new technologies. Thrives in fast-paced
-            environments, delivering innovative solutions and collaborating
-            within cross-functional teams.
+            Full Stack Developer with 10+ years' experience in
+            <strong>HTML</strong>,<strong>CSS</strong>,
+            <strong>JavaScript</strong>,<strong>Node.js</strong> and Java,and
+            Skill in <strong>React</strong> and <strong>Vue</strong>. Proactive
+            problem-solver committed to mastering new technologies. Thrives in
+            fast-paced environments, delivering innovative solutions and
+            collaborating within cross-functional teams.
           </p>
 
           <h3>Experience</h3>
           <h4>Full Stack Engineer | Freelancer | Jun 2023 - Present</h4>
           <ul>
             <li>
-              Developed an elevator appointment system, increasing technician
-              efficiency by 25% using React, Next.js, Tailwincss, and Ant
-              Design.
+              Focus on developing web applications using <strong>React</strong>
+              and Node.js ecosystem.
             </li>
             <li>
-              Built a photovoltaic power monitoring system with Vue and
-              ElementUI, optimizing generation efficiency by 15%.
+              Contributed to an elevator appointment system using React,
+              <strong>Next.js</strong>, Tailwincss, and Ant Design.
             </li>
             <li>
-              Created a smart cabinet system with Vue3, Antd, and Java, ensuring
-              secure material storage in campus labs and reducing hazardous
-              incidents by 10%
+              Built a photovoltaic power monitoring system with
+              <strong>Vue</strong>and ElementUI.
+            </li>
+            <li>
+              Contributed to a smart cabinet system with Vue3,
+              <strong>Antd</strong>, and Java, ensuring secure material storage
+              in campus labs and reducing hazardous incidents.
             </li>
           </ul>
 
           <h4>Project Manager | NkStar Ltd. | 2020/10 - 2023-06</h4>
           <ul>
             <li>
+              Developed management systems for enterprises like ERP and OA
+            </li>
+            <li>
               Oversaw software development teams and client communication,
-              achieving project objectives by implementing agile methodologies,
-              fostering collaboration, and reducing project delays by 20%.
+              achieving project objectives by fostering collaboration.
             </li>
           </ul>
 
@@ -85,13 +90,12 @@ export default function CV() {
           <ul>
             <li>
               Led the development of a campus e-commerce system, integrating
-              third-party suppliers and financial systems, resulting in 40% user
-              adoption growth.
+              third-party suppliers and financial systems.
             </li>
             <li>
               Implemented automated SKU management and reimbursement processes
               with Vue2, ElementUI, Java, Spring, MySQL, Elasticsearch, and
-              Alibaba Cloud, decreasing manual labor by 30%.
+              Alibaba Cloud.
             </li>
           </ul>
 
@@ -114,7 +118,7 @@ export default function CV() {
             </li>
             <li className="text-wrap">
               HTML/CSS/TypeScript/JavaScript/
-              Vue/React/jQuery/Tailwincss/Ant&nbsp;Design/ ElementUI/Node/JAVA
+              Vue/React/jQuery/Tailwincss/AntDesign/ElementUI/Node/Java
             </li>
           </ul>
         </main>

@@ -20,14 +20,14 @@ export default function Intro() {
         sequence={[
           "I'm a Fullstack developer.",
           1000,
-          "I'm a Vue developer.",
-          1000,
           "I'm a React developer.",
-          1000,
+          1200,
+          "I'm a Vue developer.",
+          800,
           "I'm a Node developer.",
-          1000,
+          500,
           "I'm a Java developer.",
-          2000,
+          300,
         ]}
         speed={50}
         wrapper="div"

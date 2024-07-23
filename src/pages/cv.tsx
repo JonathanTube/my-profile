@@ -4,7 +4,7 @@ import { saveAs } from "file-saver"
 export default function CV() {
   const downloadCV = () => {
     const url =
-      "https://profile.mincode.fun/Jonathan%20Full%20Stack%20Developer%20v1.0.0.pdf"
+      "https://profile.mincode.fun/Jonathan%20Full%20Stack%20Developer%20v1.0.1.pdf"
     saveAs(url, "Jonathan's CV.pdf")
   }
   return (

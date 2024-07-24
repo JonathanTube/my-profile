@@ -60,7 +60,7 @@ export default function CV() {
             </li>
             <li>
               Contributed to an elevator appointment system using React,
-              <strong>Next.js</strong>, Tailwincss, and Ant Design.
+              <strong>Next.js</strong>, Tailwind Css, and Ant Design.
             </li>
             <li>
               Built a photovoltaic power monitoring system with
@@ -117,8 +117,8 @@ export default function CV() {
               Technology
             </li>
             <li className="text-wrap">
-              HTML/CSS/TypeScript/JavaScript/
-              Vue/React/jQuery/Tailwincss/AntDesign/ElementUI/Node/Java
+              HTML/CSS/TypeScript/JavaScript/Vue/React/jQuery/Tailwind
+              Css/AntDesign/ElementUI/Node/Java
             </li>
           </ul>
         </main>
